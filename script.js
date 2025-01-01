@@ -67,7 +67,7 @@ function romperPiñata() {
 // Función de fuegos artificiales
 function lanzarFuegosArtificiales() {
     document.body.style.background = 'black';
-    celebration.innerHTML += `<p style="font-size: 2rem; text-align: center;">🎇 ¡Que este Año Nuevo 2025 sea de Abundancia y Properidad! 🎆</p>`;
+    celebration.innerHTML += `<p style="font-size: 2rem; text-align: center;">🎇 ¡Que este Nuevo Año sea de Abundancia y Properidad! 🎆</p>`;
     for (let i = 0; i < 10; i++) {
         let firework = document.createElement('div');
         firework.className = 'firework';
