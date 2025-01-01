@@ -34,10 +34,11 @@ h1 {
 
 h2 {
     margin-bottom: 10px;
-    font-size: 1.5em;
+    font-size: 1.0em;
     color: #fff;
     text-shadow: 2px 2px 4px #000;
 }
+
 /* Golpes */
 #hits {
     font-size: 1.5em;
@@ -52,15 +53,15 @@ h2 {
     align-items: center; /* Centra la piñata verticalmente */
     justify-content: center; /* Centra la piñata horizontalmente */
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
     margin: 20px auto;
 }
 
 /* Imagen de la piñata */
 #piñata {
-    width: 300%;
-    /*height: 150%;*/
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
@@ -111,15 +112,21 @@ h2 {
     }
 }
 
-/* Responsividad */
+/* RESPONSIVIDAD */
+
+/* Tablets (Pantallas medianas) */
 @media (max-width: 768px) {
     h1 {
         font-size: 2em;
     }
 
+    h2 {
+        font-size: 1.0em;
+    }
+
     #piñata {
-        width: 150px;
-        height: 150px;
+        width: 70%;
+        height: 70%;
     }
 
     #bat-animation {
@@ -130,24 +137,66 @@ h2 {
     #hits {
         font-size: 1.2em;
     }
+
+    #celebration {
+        font-size: 2.5em;
+    }
 }
 
+/* Smartphones (Pantallas pequeñas) */
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8em;
     }
 
+    h2 {
+        font-size: 0.8em;
+    }
+
     #piñata {
-        width: 120px;
-        height: 120px;
+        width: 50%;
+        height: 50%;
     }
 
     #bat-animation {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
     #hits {
         font-size: 1em;
+    }
+
+    #celebration {
+        font-size: 2em;
+    }
+}
+
+/* Teléfonos pequeños (Pantallas muy reducidas) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    #piñata {
+        width: 50%;
+        height: 50%;
+    }
+
+    #bat-animation {
+        width: 120px;
+        height: 120px;
+    }
+
+    #hits {
+        font-size: 0.9em;
+    }
+
+    #celebration {
+        font-size: 1.8em;
     }
 }
